@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0132A2BE1DD60CA8003DA57B /* NewsDetailVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0132A2BD1DD60CA8003DA57B /* NewsDetailVc.m */; };
+		017510F81DD32F56000B3793 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 017510DA1DD32F56000B3793 /* InfoPlist.strings */; };
+		017510F91DD32F56000B3793 /* ExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 017510DD1DD32F56000B3793 /* ExampleAppDelegate.m */; };
+		017510FA1DD32F56000B3793 /* ExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017510DF1DD32F56000B3793 /* ExampleTableViewCell.m */; };
+		017510FB1DD32F56000B3793 /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017510E11DD32F56000B3793 /* ExampleViewController.m */; };
+		017510FC1DD32F56000B3793 /* expandGlyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 017510E21DD32F56000B3793 /* expandGlyph.png */; };
+		017510FE1DD32F56000B3793 /* HVTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017510E61DD32F56000B3793 /* HVTableView.m */; };
+		017511021DD32F56000B3793 /* up-arrow-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 017510EA1DD32F56000B3793 /* up-arrow-2.png */; };
+		017511031DD32F56000B3793 /* up-arrow-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 017510EB1DD32F56000B3793 /* up-arrow-3.png */; };
+		017511041DD32F56000B3793 /* up-arrow-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 017510EC1DD32F56000B3793 /* up-arrow-4.png */; };
+		017511051DD32F56000B3793 /* up-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 017510ED1DD32F56000B3793 /* up-arrow.png */; };
+		017511071DD34BC6000B3793 /* football-player.png in Resources */ = {isa = PBXBuildFile; fileRef = 017511061DD34BC6000B3793 /* football-player.png */; };
+		0175110B1DD34E53000B3793 /* Fixtures.png in Resources */ = {isa = PBXBuildFile; fileRef = 0175110A1DD34E53000B3793 /* Fixtures.png */; };
+		01781F561DD5D1CB00431949 /* RssTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01781F551DD5D1CB00431949 /* RssTableCell.m */; };
+		01781F601DD5DE1C00431949 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 01781F5F1DD5DE1C00431949 /* news.png */; };
+		01781F631DD5F09400431949 /* NewsFeedsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 01781F621DD5F09400431949 /* NewsFeedsVc.m */; };
+		0178FA311DDF080900A57176 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0178FA301DDF080900A57176 /* QuartzCore.framework */; };
+		0178FA351DDF404F00A57176 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 0178FA341DDF404F00A57176 /* loading.png */; };
+		017BCF6D1DCCA37700069732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF6C1DCCA37700069732 /* main.m */; };
+		017BCF701DCCA37800069732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF6F1DCCA37800069732 /* AppDelegate.m */; };
+		017BCF731DCCA37800069732 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF721DCCA37800069732 /* ViewController.m */; };
+		017BCF761DCCA37800069732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF741DCCA37800069732 /* Main.storyboard */; };
+		017BCF781DCCA37800069732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF771DCCA37800069732 /* Assets.xcassets */; };
+		017BCF7B1DCCA37800069732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF791DCCA37800069732 /* LaunchScreen.storyboard */; };
+		017BCF8C1DCCA3F700069732 /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF851DCCA3F700069732 /* 11.jpg */; };
+		017BCF8D1DCCA3F700069732 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF861DCCA3F700069732 /* 22.jpg */; };
+		017BCF8E1DCCA3F700069732 /* 33.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF871DCCA3F700069732 /* 33.jpg */; };
+		017BCF8F1DCCA3F700069732 /* 44.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF881DCCA3F700069732 /* 44.jpg */; };
+		017BCF901DCCA3F700069732 /* 55.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF891DCCA3F700069732 /* 55.jpg */; };
+		017BCF911DCCA3F700069732 /* 66.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF8A1DCCA3F700069732 /* 66.jpg */; };
+		017BCF921DCCA3F700069732 /* 77.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 017BCF8B1DCCA3F700069732 /* 77.jpg */; };
+		017BCF9C1DCCA40800069732 /* GlowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF951DCCA40800069732 /* GlowImageView.m */; };
+		017BCF9D1DCCA40800069732 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF971DCCA40800069732 /* MenuButton.m */; };
+		017BCF9E1DCCA40800069732 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF991DCCA40800069732 /* MenuItem.m */; };
+		017BCF9F1DCCA40800069732 /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF9B1DCCA40800069732 /* PopMenu.m */; };
+		017BCFA31DCCC39700069732 /* PremierLeagueVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCFA21DCCC39700069732 /* PremierLeagueVc.m */; };
+		017BCFA61DCCC4E100069732 /* ShowMenuVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCFA51DCCC4E100069732 /* ShowMenuVc.m */; };
+		01864CDA1DE0242C0048AFE7 /* Ball3.png in Resources */ = {isa = PBXBuildFile; fileRef = 01864CD71DE0242C0048AFE7 /* Ball3.png */; };
+		01864CDB1DE0242C0048AFE7 /* Ball4.png in Resources */ = {isa = PBXBuildFile; fileRef = 01864CD81DE0242C0048AFE7 /* Ball4.png */; };
+		01864CE01DE026350048AFE7 /* Ball5.png in Resources */ = {isa = PBXBuildFile; fileRef = 01864CDF1DE026350048AFE7 /* Ball5.png */; };
+		01864CE21DE029DC0048AFE7 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 01864CE11DE029DC0048AFE7 /* Ball.png */; };
+		018843C71DD4763E006ABD5C /* Ball2.png in Resources */ = {isa = PBXBuildFile; fileRef = 018843C61DD4763E006ABD5C /* Ball2.png */; };
+		019C0D451DD1A43500977408 /* clubDetailVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C0D441DD1A43500977408 /* clubDetailVc.m */; };
+		019C0D491DD1E97300977408 /* Close.png in Resources */ = {isa = PBXBuildFile; fileRef = 019C0D481DD1E97300977408 /* Close.png */; };
+		019C5B2B1DDDDC2600559F44 /* UIView+YALConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C5B271DDDDC2600559F44 /* UIView+YALConstraints.m */; };
+		019C5B2C1DDDDC2600559F44 /* YALContextMenuTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C5B2A1DDDDC2600559F44 /* YALContextMenuTableView.m */; };
+		019C5B311DDDDC4000559F44 /* ContextMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 019C5B2F1DDDDC4000559F44 /* ContextMenuCell.m */; };
+		019C5B321DDDDC4000559F44 /* ContextMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 019C5B301DDDDC4000559F44 /* ContextMenuCell.xib */; };
+		019C5B341DDDE63400559F44 /* Imagess.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019C5B331DDDE63400559F44 /* Imagess.xcassets */; };
+		019C5B381DDDF1F400559F44 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 019C5B371DDDF1F400559F44 /* menu.png */; };
+		01C6007E1DD0637F00FA6CAA /* PremierLeagueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C6007D1DD0637F00FA6CAA /* PremierLeagueCell.m */; };
+		01C600921DD0B7E200FA6CAA /* Afc_bournemouth.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600811DD0B7E200FA6CAA /* Afc_bournemouth.png */; };
+		01C600931DD0B7E200FA6CAA /* AFC_Sunderland.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600821DD0B7E200FA6CAA /* AFC_Sunderland.png */; };
+		01C600941DD0B7E200FA6CAA /* Arsenal_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600831DD0B7E200FA6CAA /* Arsenal_FC.png */; };
+		01C600951DD0B7E200FA6CAA /* Chelsea_crest.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600841DD0B7E200FA6CAA /* Chelsea_crest.png */; };
+		01C600961DD0B7E200FA6CAA /* Everton_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600851DD0B7E200FA6CAA /* Everton_FC.png */; };
+		01C600971DD0B7E200FA6CAA /* FC_Liverpool.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600861DD0B7E200FA6CAA /* FC_Liverpool.png */; };
+		01C600981DD0B7E200FA6CAA /* FC_Southampton.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600871DD0B7E200FA6CAA /* FC_Southampton.png */; };
+		01C600991DD0B7E200FA6CAA /* Hull_City_AFC.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600881DD0B7E200FA6CAA /* Hull_City_AFC.png */; };
+		01C6009A1DD0B7E200FA6CAA /* Manchester_City_FC_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600891DD0B7E200FA6CAA /* Manchester_City_FC_badge.png */; };
+		01C6009B1DD0B7E200FA6CAA /* Manchester_United_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6008A1DD0B7E200FA6CAA /* Manchester_United_FC.png */; };
+		01C6009C1DD0B7E200FA6CAA /* Middlesbrough_FC_crest.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6008B1DD0B7E200FA6CAA /* Middlesbrough_FC_crest.png */; };
+		01C6009D1DD0B7E200FA6CAA /* Stoke_City.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6008C1DD0B7E200FA6CAA /* Stoke_City.png */; };
+		01C6009E1DD0B7E200FA6CAA /* Swansea_City_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6008D1DD0B7E200FA6CAA /* Swansea_City_Logo.png */; };
+		01C6009F1DD0B7E200FA6CAA /* Tottenham_Hotspur.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6008E1DD0B7E200FA6CAA /* Tottenham_Hotspur.png */; };
+		01C600A01DD0B7E200FA6CAA /* Watford.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6008F1DD0B7E200FA6CAA /* Watford.png */; };
+		01C600A11DD0B7E200FA6CAA /* West_Bromwich_Albion.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600901DD0B7E200FA6CAA /* West_Bromwich_Albion.png */; };
+		01C600A21DD0B7E200FA6CAA /* West_Ham_United_FC.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600911DD0B7E200FA6CAA /* West_Ham_United_FC.png */; };
+		01C600A61DD0B90B00FA6CAA /* Burnley_FC_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600A31DD0B90B00FA6CAA /* Burnley_FC_badge.png */; };
+		01C600A71DD0B90B00FA6CAA /* Crystal_Palace_F.C._logo_(2013).png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600A41DD0B90B00FA6CAA /* Crystal_Palace_F.C._logo_(2013).png */; };
+		01C600A81DD0B90B00FA6CAA /* Leicester02.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C600A51DD0B90B00FA6CAA /* Leicester02.png */; };
+		1C5963A531A162620FA5D069 /* libPods-FootyMania.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 597E67922D68D510B627DCEA /* libPods-FootyMania.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0132A2BC1DD60CA8003DA57B /* NewsDetailVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailVc.h; sourceTree = "<group>"; };
+		0132A2BD1DD60CA8003DA57B /* NewsDetailVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailVc.m; sourceTree = "<group>"; };
+		017510DB1DD32F56000B3793 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		017510DC1DD32F56000B3793 /* ExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleAppDelegate.h; sourceTree = "<group>"; };
+		017510DD1DD32F56000B3793 /* ExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleAppDelegate.m; sourceTree = "<group>"; };
+		017510DE1DD32F56000B3793 /* ExampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewCell.h; sourceTree = "<group>"; };
+		017510DF1DD32F56000B3793 /* ExampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewCell.m; sourceTree = "<group>"; };
+		017510E01DD32F56000B3793 /* ExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		017510E11DD32F56000B3793 /* ExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		017510E21DD32F56000B3793 /* expandGlyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expandGlyph.png; sourceTree = "<group>"; };
+		017510E41DD32F56000B3793 /* HVTableView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HVTableView-Prefix.pch"; sourceTree = "<group>"; };
+		017510E51DD32F56000B3793 /* HVTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVTableView.h; sourceTree = "<group>"; };
+		017510E61DD32F56000B3793 /* HVTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVTableView.m; sourceTree = "<group>"; };
+		017510EA1DD32F56000B3793 /* up-arrow-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow-2.png"; sourceTree = "<group>"; };
+		017510EB1DD32F56000B3793 /* up-arrow-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow-3.png"; sourceTree = "<group>"; };
+		017510EC1DD32F56000B3793 /* up-arrow-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow-4.png"; sourceTree = "<group>"; };
+		017510ED1DD32F56000B3793 /* up-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-arrow.png"; sourceTree = "<group>"; };
+		017511061DD34BC6000B3793 /* football-player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "football-player.png"; sourceTree = "<group>"; };
+		0175110A1DD34E53000B3793 /* Fixtures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fixtures.png; sourceTree = "<group>"; };
+		01781F541DD5D1CB00431949 /* RssTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RssTableCell.h; sourceTree = "<group>"; };
+		01781F551DD5D1CB00431949 /* RssTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RssTableCell.m; sourceTree = "<group>"; };
+		01781F5F1DD5DE1C00431949 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		01781F611DD5F09400431949 /* NewsFeedsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedsVc.h; sourceTree = "<group>"; };
+		01781F621DD5F09400431949 /* NewsFeedsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedsVc.m; sourceTree = "<group>"; };
+		0178FA301DDF080900A57176 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0178FA341DDF404F00A57176 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loading.png; path = ../../HVTableView/loading.png; sourceTree = "<group>"; };
+		017BCF681DCCA37700069732 /* FootyMania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootyMania.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		017BCF6C1DCCA37700069732 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		017BCF6E1DCCA37800069732 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		017BCF6F1DCCA37800069732 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		017BCF711DCCA37800069732 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		017BCF721DCCA37800069732 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		017BCF751DCCA37800069732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		017BCF771DCCA37800069732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		017BCF7A1DCCA37800069732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		017BCF7C1DCCA37800069732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		017BCF851DCCA3F700069732 /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
+		017BCF861DCCA3F700069732 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
+		017BCF871DCCA3F700069732 /* 33.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 33.jpg; sourceTree = "<group>"; };
+		017BCF881DCCA3F700069732 /* 44.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 44.jpg; sourceTree = "<group>"; };
+		017BCF891DCCA3F700069732 /* 55.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 55.jpg; sourceTree = "<group>"; };
+		017BCF8A1DCCA3F700069732 /* 66.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 66.jpg; sourceTree = "<group>"; };
+		017BCF8B1DCCA3F700069732 /* 77.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 77.jpg; sourceTree = "<group>"; };
+		017BCF941DCCA40800069732 /* GlowImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlowImageView.h; sourceTree = "<group>"; };
+		017BCF951DCCA40800069732 /* GlowImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlowImageView.m; sourceTree = "<group>"; };
+		017BCF961DCCA40800069732 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
+		017BCF971DCCA40800069732 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
+		017BCF981DCCA40800069732 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		017BCF991DCCA40800069732 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
+		017BCF9A1DCCA40800069732 /* PopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenu.h; sourceTree = "<group>"; };
+		017BCF9B1DCCA40800069732 /* PopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenu.m; sourceTree = "<group>"; };
+		017BCFA11DCCC39700069732 /* PremierLeagueVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PremierLeagueVc.h; sourceTree = "<group>"; };
+		017BCFA21DCCC39700069732 /* PremierLeagueVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PremierLeagueVc.m; sourceTree = "<group>"; };
+		017BCFA41DCCC4E100069732 /* ShowMenuVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMenuVc.h; sourceTree = "<group>"; };
+		017BCFA51DCCC4E100069732 /* ShowMenuVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMenuVc.m; sourceTree = "<group>"; };
+		01864CD71DE0242C0048AFE7 /* Ball3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball3.png; sourceTree = "<group>"; };
+		01864CD81DE0242C0048AFE7 /* Ball4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball4.png; sourceTree = "<group>"; };
+		01864CDF1DE026350048AFE7 /* Ball5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball5.png; sourceTree = "<group>"; };
+		01864CE11DE029DC0048AFE7 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
+		018843C61DD4763E006ABD5C /* Ball2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball2.png; sourceTree = "<group>"; };
+		019C0D431DD1A43500977408 /* clubDetailVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clubDetailVc.h; sourceTree = "<group>"; };
+		019C0D441DD1A43500977408 /* clubDetailVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clubDetailVc.m; sourceTree = "<group>"; };
+		019C0D481DD1E97300977408 /* Close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Close.png; sourceTree = "<group>"; };
+		019C5B261DDDDC2600559F44 /* UIView+YALConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YALConstraints.h"; sourceTree = "<group>"; };
+		019C5B271DDDDC2600559F44 /* UIView+YALConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YALConstraints.m"; sourceTree = "<group>"; };
+		019C5B281DDDDC2600559F44 /* YALContextMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALContextMenuCell.h; sourceTree = "<group>"; };
+		019C5B291DDDDC2600559F44 /* YALContextMenuTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YALContextMenuTableView.h; sourceTree = "<group>"; };
+		019C5B2A1DDDDC2600559F44 /* YALContextMenuTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YALContextMenuTableView.m; sourceTree = "<group>"; };
+		019C5B2E1DDDDC4000559F44 /* ContextMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextMenuCell.h; sourceTree = "<group>"; };
+		019C5B2F1DDDDC4000559F44 /* ContextMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextMenuCell.m; sourceTree = "<group>"; };
+		019C5B301DDDDC4000559F44 /* ContextMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContextMenuCell.xib; sourceTree = "<group>"; };
+		019C5B331DDDE63400559F44 /* Imagess.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagess.xcassets; sourceTree = "<group>"; };
+		019C5B371DDDF1F400559F44 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		01C6007C1DD0637F00FA6CAA /* PremierLeagueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PremierLeagueCell.h; sourceTree = "<group>"; };
+		01C6007D1DD0637F00FA6CAA /* PremierLeagueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PremierLeagueCell.m; sourceTree = "<group>"; };
+		01C600811DD0B7E200FA6CAA /* Afc_bournemouth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Afc_bournemouth.png; sourceTree = "<group>"; };
+		01C600821DD0B7E200FA6CAA /* AFC_Sunderland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AFC_Sunderland.png; sourceTree = "<group>"; };
+		01C600831DD0B7E200FA6CAA /* Arsenal_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arsenal_FC.png; sourceTree = "<group>"; };
+		01C600841DD0B7E200FA6CAA /* Chelsea_crest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chelsea_crest.png; sourceTree = "<group>"; };
+		01C600851DD0B7E200FA6CAA /* Everton_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Everton_FC.png; sourceTree = "<group>"; };
+		01C600861DD0B7E200FA6CAA /* FC_Liverpool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Liverpool.png; sourceTree = "<group>"; };
+		01C600871DD0B7E200FA6CAA /* FC_Southampton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FC_Southampton.png; sourceTree = "<group>"; };
+		01C600881DD0B7E200FA6CAA /* Hull_City_AFC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hull_City_AFC.png; sourceTree = "<group>"; };
+		01C600891DD0B7E200FA6CAA /* Manchester_City_FC_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manchester_City_FC_badge.png; sourceTree = "<group>"; };
+		01C6008A1DD0B7E200FA6CAA /* Manchester_United_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Manchester_United_FC.png; sourceTree = "<group>"; };
+		01C6008B1DD0B7E200FA6CAA /* Middlesbrough_FC_crest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Middlesbrough_FC_crest.png; sourceTree = "<group>"; };
+		01C6008C1DD0B7E200FA6CAA /* Stoke_City.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stoke_City.png; sourceTree = "<group>"; };
+		01C6008D1DD0B7E200FA6CAA /* Swansea_City_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swansea_City_Logo.png; sourceTree = "<group>"; };
+		01C6008E1DD0B7E200FA6CAA /* Tottenham_Hotspur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tottenham_Hotspur.png; sourceTree = "<group>"; };
+		01C6008F1DD0B7E200FA6CAA /* Watford.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Watford.png; sourceTree = "<group>"; };
+		01C600901DD0B7E200FA6CAA /* West_Bromwich_Albion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = West_Bromwich_Albion.png; sourceTree = "<group>"; };
+		01C600911DD0B7E200FA6CAA /* West_Ham_United_FC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = West_Ham_United_FC.png; sourceTree = "<group>"; };
+		01C600A31DD0B90B00FA6CAA /* Burnley_FC_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Burnley_FC_badge.png; sourceTree = "<group>"; };
+		01C600A41DD0B90B00FA6CAA /* Crystal_Palace_F.C._logo_(2013).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Crystal_Palace_F.C._logo_(2013).png"; sourceTree = "<group>"; };
+		01C600A51DD0B90B00FA6CAA /* Leicester02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leicester02.png; sourceTree = "<group>"; };
+		48490C7EE8BBEA8B773BA41D /* Pods-FootyMania.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootyMania.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootyMania/Pods-FootyMania.debug.xcconfig"; sourceTree = "<group>"; };
+		597E67922D68D510B627DCEA /* libPods-FootyMania.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FootyMania.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1021B24E31C45FBCB118A66 /* Pods-FootyMania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootyMania.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootyMania/Pods-FootyMania.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		017BCF651DCCA37700069732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0178FA311DDF080900A57176 /* QuartzCore.framework in Frameworks */,
+				1C5963A531A162620FA5D069 /* libPods-FootyMania.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017510CF1DD32F56000B3793 /* HVTableView */ = {
+			isa = PBXGroup;
+			children = (
+				017510DA1DD32F56000B3793 /* InfoPlist.strings */,
+				017510DC1DD32F56000B3793 /* ExampleAppDelegate.h */,
+				017510DD1DD32F56000B3793 /* ExampleAppDelegate.m */,
+				017510DE1DD32F56000B3793 /* ExampleTableViewCell.h */,
+				017510DF1DD32F56000B3793 /* ExampleTableViewCell.m */,
+				017510E01DD32F56000B3793 /* ExampleViewController.h */,
+				017510E11DD32F56000B3793 /* ExampleViewController.m */,
+				017510E21DD32F56000B3793 /* expandGlyph.png */,
+				017510E41DD32F56000B3793 /* HVTableView-Prefix.pch */,
+				017510E51DD32F56000B3793 /* HVTableView.h */,
+				017510E61DD32F56000B3793 /* HVTableView.m */,
+				017510EA1DD32F56000B3793 /* up-arrow-2.png */,
+				017510EB1DD32F56000B3793 /* up-arrow-3.png */,
+				017510EC1DD32F56000B3793 /* up-arrow-4.png */,
+				017510ED1DD32F56000B3793 /* up-arrow.png */,
+			);
+			path = HVTableView;
+			sourceTree = "<group>";
+		};
+		017BCF5F1DCCA37700069732 = {
+			isa = PBXGroup;
+			children = (
+				019C5B251DDDDC2600559F44 /* YALContextMenu */,
+				017510CF1DD32F56000B3793 /* HVTableView */,
+				01C6007B1DD062F100FA6CAA /* Cell */,
+				017BCFA01DCCC36300069732 /* Controllers */,
+				017BCF931DCCA40800069732 /* MenuPop */,
+				017BCF841DCCA3F700069732 /* images */,
+				017BCF6A1DCCA37700069732 /* FootyMania */,
+				017BCF691DCCA37700069732 /* Products */,
+				443EB3880E470385C9D4468B /* Pods */,
+				15AAAD39F860A00E3CDA32FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		017BCF691DCCA37700069732 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				017BCF681DCCA37700069732 /* FootyMania.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		017BCF6A1DCCA37700069732 /* FootyMania */ = {
+			isa = PBXGroup;
+			children = (
+				017BCF6E1DCCA37800069732 /* AppDelegate.h */,
+				017BCF6F1DCCA37800069732 /* AppDelegate.m */,
+				017BCF711DCCA37800069732 /* ViewController.h */,
+				017BCF721DCCA37800069732 /* ViewController.m */,
+				017BCFA41DCCC4E100069732 /* ShowMenuVc.h */,
+				017BCFA51DCCC4E100069732 /* ShowMenuVc.m */,
+				017BCF741DCCA37800069732 /* Main.storyboard */,
+				017BCF771DCCA37800069732 /* Assets.xcassets */,
+				017BCF791DCCA37800069732 /* LaunchScreen.storyboard */,
+				017BCF7C1DCCA37800069732 /* Info.plist */,
+				017BCF6B1DCCA37700069732 /* Supporting Files */,
+			);
+			path = FootyMania;
+			sourceTree = "<group>";
+		};
+		017BCF6B1DCCA37700069732 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				017BCF6C1DCCA37700069732 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		017BCF841DCCA3F700069732 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				01C600801DD0B7E200FA6CAA /* Icons */,
+				017BCF851DCCA3F700069732 /* 11.jpg */,
+				017BCF861DCCA3F700069732 /* 22.jpg */,
+				017BCF871DCCA3F700069732 /* 33.jpg */,
+				017BCF881DCCA3F700069732 /* 44.jpg */,
+				017BCF891DCCA3F700069732 /* 55.jpg */,
+				017BCF8A1DCCA3F700069732 /* 66.jpg */,
+				017BCF8B1DCCA3F700069732 /* 77.jpg */,
+				019C0D481DD1E97300977408 /* Close.png */,
+				017511061DD34BC6000B3793 /* football-player.png */,
+				0175110A1DD34E53000B3793 /* Fixtures.png */,
+				01864CE11DE029DC0048AFE7 /* Ball.png */,
+				018843C61DD4763E006ABD5C /* Ball2.png */,
+				01781F5F1DD5DE1C00431949 /* news.png */,
+				019C5B371DDDF1F400559F44 /* menu.png */,
+				01864CD71DE0242C0048AFE7 /* Ball3.png */,
+				01864CD81DE0242C0048AFE7 /* Ball4.png */,
+				01864CDF1DE026350048AFE7 /* Ball5.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		017BCF931DCCA40800069732 /* MenuPop */ = {
+			isa = PBXGroup;
+			children = (
+				017BCF941DCCA40800069732 /* GlowImageView.h */,
+				017BCF951DCCA40800069732 /* GlowImageView.m */,
+				017BCF961DCCA40800069732 /* MenuButton.h */,
+				017BCF971DCCA40800069732 /* MenuButton.m */,
+				017BCF981DCCA40800069732 /* MenuItem.h */,
+				017BCF991DCCA40800069732 /* MenuItem.m */,
+				017BCF9A1DCCA40800069732 /* PopMenu.h */,
+				017BCF9B1DCCA40800069732 /* PopMenu.m */,
+			);
+			path = MenuPop;
+			sourceTree = "<group>";
+		};
+		017BCFA01DCCC36300069732 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				017BCFA11DCCC39700069732 /* PremierLeagueVc.h */,
+				017BCFA21DCCC39700069732 /* PremierLeagueVc.m */,
+				019C0D431DD1A43500977408 /* clubDetailVc.h */,
+				019C0D441DD1A43500977408 /* clubDetailVc.m */,
+				01781F611DD5F09400431949 /* NewsFeedsVc.h */,
+				01781F621DD5F09400431949 /* NewsFeedsVc.m */,
+				0132A2BC1DD60CA8003DA57B /* NewsDetailVc.h */,
+				0132A2BD1DD60CA8003DA57B /* NewsDetailVc.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		019C5B251DDDDC2600559F44 /* YALContextMenu */ = {
+			isa = PBXGroup;
+			children = (
+				019C5B2D1DDDDC4000559F44 /* ContextMenuCell */,
+				019C5B261DDDDC2600559F44 /* UIView+YALConstraints.h */,
+				019C5B271DDDDC2600559F44 /* UIView+YALConstraints.m */,
+				019C5B281DDDDC2600559F44 /* YALContextMenuCell.h */,
+				019C5B291DDDDC2600559F44 /* YALContextMenuTableView.h */,
+				019C5B2A1DDDDC2600559F44 /* YALContextMenuTableView.m */,
+				019C5B331DDDE63400559F44 /* Imagess.xcassets */,
+			);
+			path = YALContextMenu;
+			sourceTree = "<group>";
+		};
+		019C5B2D1DDDDC4000559F44 /* ContextMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				019C5B2E1DDDDC4000559F44 /* ContextMenuCell.h */,
+				019C5B2F1DDDDC4000559F44 /* ContextMenuCell.m */,
+				019C5B301DDDDC4000559F44 /* ContextMenuCell.xib */,
+			);
+			path = ContextMenuCell;
+			sourceTree = "<group>";
+		};
+		01C6007B1DD062F100FA6CAA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				01C6007C1DD0637F00FA6CAA /* PremierLeagueCell.h */,
+				01C6007D1DD0637F00FA6CAA /* PremierLeagueCell.m */,
+				01781F541DD5D1CB00431949 /* RssTableCell.h */,
+				01781F551DD5D1CB00431949 /* RssTableCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		01C600801DD0B7E200FA6CAA /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				0178FA341DDF404F00A57176 /* loading.png */,
+				01C600A31DD0B90B00FA6CAA /* Burnley_FC_badge.png */,
+				01C600A41DD0B90B00FA6CAA /* Crystal_Palace_F.C._logo_(2013).png */,
+				01C600A51DD0B90B00FA6CAA /* Leicester02.png */,
+				01C600811DD0B7E200FA6CAA /* Afc_bournemouth.png */,
+				01C600821DD0B7E200FA6CAA /* AFC_Sunderland.png */,
+				01C600831DD0B7E200FA6CAA /* Arsenal_FC.png */,
+				01C600841DD0B7E200FA6CAA /* Chelsea_crest.png */,
+				01C600851DD0B7E200FA6CAA /* Everton_FC.png */,
+				01C600861DD0B7E200FA6CAA /* FC_Liverpool.png */,
+				01C600871DD0B7E200FA6CAA /* FC_Southampton.png */,
+				01C600881DD0B7E200FA6CAA /* Hull_City_AFC.png */,
+				01C600891DD0B7E200FA6CAA /* Manchester_City_FC_badge.png */,
+				01C6008A1DD0B7E200FA6CAA /* Manchester_United_FC.png */,
+				01C6008B1DD0B7E200FA6CAA /* Middlesbrough_FC_crest.png */,
+				01C6008C1DD0B7E200FA6CAA /* Stoke_City.png */,
+				01C6008D1DD0B7E200FA6CAA /* Swansea_City_Logo.png */,
+				01C6008E1DD0B7E200FA6CAA /* Tottenham_Hotspur.png */,
+				01C6008F1DD0B7E200FA6CAA /* Watford.png */,
+				01C600901DD0B7E200FA6CAA /* West_Bromwich_Albion.png */,
+				01C600911DD0B7E200FA6CAA /* West_Ham_United_FC.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		15AAAD39F860A00E3CDA32FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0178FA301DDF080900A57176 /* QuartzCore.framework */,
+				597E67922D68D510B627DCEA /* libPods-FootyMania.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		443EB3880E470385C9D4468B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48490C7EE8BBEA8B773BA41D /* Pods-FootyMania.debug.xcconfig */,
+				E1021B24E31C45FBCB118A66 /* Pods-FootyMania.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		017BCF671DCCA37700069732 /* FootyMania */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 017BCF7F1DCCA37800069732 /* Build configuration list for PBXNativeTarget "FootyMania" */;
+			buildPhases = (
+				2239DE53EA63285BBDE24AEF /* [CP] Check Pods Manifest.lock */,
+				017BCF641DCCA37700069732 /* Sources */,
+				017BCF651DCCA37700069732 /* Frameworks */,
+				017BCF661DCCA37700069732 /* Resources */,
+				A0D71C528A8F7B30D83DB3A7 /* [CP] Embed Pods Frameworks */,
+				2B9FF7266C8C5226E6D1AA1A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootyMania;
+			productName = FootyMania;
+			productReference = 017BCF681DCCA37700069732 /* FootyMania.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		017BCF601DCCA37700069732 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = BICS;
+				TargetAttributes = {
+					017BCF671DCCA37700069732 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 017BCF631DCCA37700069732 /* Build configuration list for PBXProject "FootyMania" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 017BCF5F1DCCA37700069732;
+			productRefGroup = 017BCF691DCCA37700069732 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				017BCF671DCCA37700069732 /* FootyMania */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		017BCF661DCCA37700069732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017510F81DD32F56000B3793 /* InfoPlist.strings in Resources */,
+				017BCF911DCCA3F700069732 /* 66.jpg in Resources */,
+				01C6009B1DD0B7E200FA6CAA /* Manchester_United_FC.png in Resources */,
+				01864CE21DE029DC0048AFE7 /* Ball.png in Resources */,
+				017511041DD32F56000B3793 /* up-arrow-4.png in Resources */,
+				017BCF7B1DCCA37800069732 /* LaunchScreen.storyboard in Resources */,
+				01C6009A1DD0B7E200FA6CAA /* Manchester_City_FC_badge.png in Resources */,
+				017BCF901DCCA3F700069732 /* 55.jpg in Resources */,
+				01C6009D1DD0B7E200FA6CAA /* Stoke_City.png in Resources */,
+				017511021DD32F56000B3793 /* up-arrow-2.png in Resources */,
+				017BCF8F1DCCA3F700069732 /* 44.jpg in Resources */,
+				019C0D491DD1E97300977408 /* Close.png in Resources */,
+				019C5B381DDDF1F400559F44 /* menu.png in Resources */,
+				01C6009E1DD0B7E200FA6CAA /* Swansea_City_Logo.png in Resources */,
+				018843C71DD4763E006ABD5C /* Ball2.png in Resources */,
+				01C6009F1DD0B7E200FA6CAA /* Tottenham_Hotspur.png in Resources */,
+				01C600A21DD0B7E200FA6CAA /* West_Ham_United_FC.png in Resources */,
+				017BCF8C1DCCA3F700069732 /* 11.jpg in Resources */,
+				01C600921DD0B7E200FA6CAA /* Afc_bournemouth.png in Resources */,
+				01C600991DD0B7E200FA6CAA /* Hull_City_AFC.png in Resources */,
+				017BCF8D1DCCA3F700069732 /* 22.jpg in Resources */,
+				01864CE01DE026350048AFE7 /* Ball5.png in Resources */,
+				01C600971DD0B7E200FA6CAA /* FC_Liverpool.png in Resources */,
+				01C600A71DD0B90B00FA6CAA /* Crystal_Palace_F.C._logo_(2013).png in Resources */,
+				01C600A11DD0B7E200FA6CAA /* West_Bromwich_Albion.png in Resources */,
+				017BCF8E1DCCA3F700069732 /* 33.jpg in Resources */,
+				01C600A81DD0B90B00FA6CAA /* Leicester02.png in Resources */,
+				017BCF921DCCA3F700069732 /* 77.jpg in Resources */,
+				017511051DD32F56000B3793 /* up-arrow.png in Resources */,
+				01C600981DD0B7E200FA6CAA /* FC_Southampton.png in Resources */,
+				017BCF781DCCA37800069732 /* Assets.xcassets in Resources */,
+				01C600961DD0B7E200FA6CAA /* Everton_FC.png in Resources */,
+				01C600931DD0B7E200FA6CAA /* AFC_Sunderland.png in Resources */,
+				01C600A61DD0B90B00FA6CAA /* Burnley_FC_badge.png in Resources */,
+				01781F601DD5DE1C00431949 /* news.png in Resources */,
+				01864CDA1DE0242C0048AFE7 /* Ball3.png in Resources */,
+				019C5B341DDDE63400559F44 /* Imagess.xcassets in Resources */,
+				017510FC1DD32F56000B3793 /* expandGlyph.png in Resources */,
+				01C600951DD0B7E200FA6CAA /* Chelsea_crest.png in Resources */,
+				01C6009C1DD0B7E200FA6CAA /* Middlesbrough_FC_crest.png in Resources */,
+				0175110B1DD34E53000B3793 /* Fixtures.png in Resources */,
+				01C600A01DD0B7E200FA6CAA /* Watford.png in Resources */,
+				0178FA351DDF404F00A57176 /* loading.png in Resources */,
+				017BCF761DCCA37800069732 /* Main.storyboard in Resources */,
+				01864CDB1DE0242C0048AFE7 /* Ball4.png in Resources */,
+				019C5B321DDDDC4000559F44 /* ContextMenuCell.xib in Resources */,
+				017511031DD32F56000B3793 /* up-arrow-3.png in Resources */,
+				01C600941DD0B7E200FA6CAA /* Arsenal_FC.png in Resources */,
+				017511071DD34BC6000B3793 /* football-player.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2239DE53EA63285BBDE24AEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2B9FF7266C8C5226E6D1AA1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootyMania/Pods-FootyMania-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D71C528A8F7B30D83DB3A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootyMania/Pods-FootyMania-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		017BCF641DCCA37700069732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				017BCF731DCCA37800069732 /* ViewController.m in Sources */,
+				017BCF9C1DCCA40800069732 /* GlowImageView.m in Sources */,
+				019C5B2B1DDDDC2600559F44 /* UIView+YALConstraints.m in Sources */,
+				017BCF701DCCA37800069732 /* AppDelegate.m in Sources */,
+				017510FE1DD32F56000B3793 /* HVTableView.m in Sources */,
+				017510F91DD32F56000B3793 /* ExampleAppDelegate.m in Sources */,
+				01781F631DD5F09400431949 /* NewsFeedsVc.m in Sources */,
+				017BCF9E1DCCA40800069732 /* MenuItem.m in Sources */,
+				017510FB1DD32F56000B3793 /* ExampleViewController.m in Sources */,
+				0132A2BE1DD60CA8003DA57B /* NewsDetailVc.m in Sources */,
+				017BCFA31DCCC39700069732 /* PremierLeagueVc.m in Sources */,
+				01C6007E1DD0637F00FA6CAA /* PremierLeagueCell.m in Sources */,
+				01781F561DD5D1CB00431949 /* RssTableCell.m in Sources */,
+				017BCF9F1DCCA40800069732 /* PopMenu.m in Sources */,
+				017BCF9D1DCCA40800069732 /* MenuButton.m in Sources */,
+				019C5B2C1DDDDC2600559F44 /* YALContextMenuTableView.m in Sources */,
+				017BCFA61DCCC4E100069732 /* ShowMenuVc.m in Sources */,
+				017510FA1DD32F56000B3793 /* ExampleTableViewCell.m in Sources */,
+				017BCF6D1DCCA37700069732 /* main.m in Sources */,
+				019C5B311DDDDC4000559F44 /* ContextMenuCell.m in Sources */,
+				019C0D451DD1A43500977408 /* clubDetailVc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		017510DA1DD32F56000B3793 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017510DB1DD32F56000B3793 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		017BCF741DCCA37800069732 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017BCF751DCCA37800069732 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		017BCF791DCCA37800069732 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				017BCF7A1DCCA37800069732 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		017BCF7D1DCCA37800069732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		017BCF7E1DCCA37800069732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		017BCF801DCCA37800069732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48490C7EE8BBEA8B773BA41D /* Pods-FootyMania.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/HVTableView\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/XHRealTimeBlur\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
+				INFOPLIST_FILE = FootyMania/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/XHRealTimeBlur\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/pop\"",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-l\"XHRealTimeBlur\"",
+					"-l\"c++\"",
+					"-l\"pop\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Example.FootyMania;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		017BCF811DCCA37800069732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1021B24E31C45FBCB118A66 /* Pods-FootyMania.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/HVTableView\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/XHRealTimeBlur\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
+				INFOPLIST_FILE = FootyMania/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/XHRealTimeBlur\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/pop\"",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SDWebImage\"",
+					"-l\"XHRealTimeBlur\"",
+					"-l\"c++\"",
+					"-l\"pop\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Example.FootyMania;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		017BCF631DCCA37700069732 /* Build configuration list for PBXProject "FootyMania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017BCF7D1DCCA37800069732 /* Debug */,
+				017BCF7E1DCCA37800069732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		017BCF7F1DCCA37800069732 /* Build configuration list for PBXNativeTarget "FootyMania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				017BCF801DCCA37800069732 /* Debug */,
+				017BCF811DCCA37800069732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 017BCF601DCCA37700069732 /* Project object */;
+}

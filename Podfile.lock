@@ -1,0 +1,20 @@
+PODS:
+  - pop (1.0.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - XHRealTimeBlur (1.7)
+
+DEPENDENCIES:
+  - pop
+  - SDWebImage
+  - XHRealTimeBlur
+
+SPEC CHECKSUMS:
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  XHRealTimeBlur: 661fadd5691ba2d349758e8fd5fbdb499ac55f8c
+
+PODFILE CHECKSUM: 272e2cfe1691353361b48c43f1acd92a0a9d9c5e
+
+COCOAPODS: 1.0.1
