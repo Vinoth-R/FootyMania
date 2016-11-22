@@ -106,22 +106,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Controllers/PremierLeagueVc.m"
-            timestampString = "501158432.031346"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-webServiceHandler"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Controllers/PremierLeagueVc.m"
             timestampString = "501166831.842896"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
