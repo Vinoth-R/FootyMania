@@ -47,7 +47,7 @@
     rotation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
     rotation.fromValue = [NSNumber numberWithFloat:0];
     rotation.toValue = [NSNumber numberWithFloat:(2*M_PI)];
-    rotation.duration = 2.0;
+    rotation.duration = 1.0;
     rotation.repeatCount = HUGE_VALF;
     [_ballBtnRotate.layer addAnimation:rotation forKey:@"Spin"];
 
