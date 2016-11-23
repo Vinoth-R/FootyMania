@@ -15,6 +15,7 @@
 #import "ExampleViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
+
 static NSString *const menuCellIdentifier = @"rotationCell";
 
 @interface PremierLeagueVc ()
@@ -141,10 +142,10 @@ YALContextMenuTableViewDelegate
     }
     cell.marketValueLbl.text = [valueArray objectAtIndex:indexPath.row];
     
-  //  NSString *urlStr = [crestUrlArray objectAtIndex:indexPath.row];
+
     
-   // [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:urlStr]
-   //                    placeholderImage:[UIImage imageNamed:@""]];
+  //  [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:urlStr]
+  //                     placeholderImage:[UIImage imageNamed:@""]];
     
     cell.logoImageView.image = [UIImage imageNamed:[imageArray objectAtIndex:indexPath.row]];
 
