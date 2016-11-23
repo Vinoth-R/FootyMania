@@ -1,8 +1,9 @@
 # FootyMania
 App intended for Football associated features.
 
-![home](https://cloud.githubusercontent.com/assets/20532417/20556389/dd757002-b18c-11e6-8d0d-607c5bfe21aa.png)
-![competition](https://cloud.githubusercontent.com/assets/20532417/20556391/e15587fc-b18c-11e6-9430-6664cdc7bf17.png)
-![news](https://cloud.githubusercontent.com/assets/20532417/20556538/95dfdf7e-b18d-11e6-8e6f-1f7b4f25105a.png)
-![teams](https://cloud.githubusercontent.com/assets/20532417/20556543/9e32ef5e-b18d-11e6-8382-0d4db3ee84f9.png)
-![player details](https://cloud.githubusercontent.com/assets/20532417/20556547/a25460c2-b18d-11e6-8248-33383ef3fd9c.png)
+![simulator screen shot 23-nov-2016 3 28 07 pm](https://cloud.githubusercontent.com/assets/20532417/20557496/bac3f63c-b191-11e6-8024-b78802724528.png)
+![simulator screen shot 23-nov-2016 3 28 17 pm](https://cloud.githubusercontent.com/assets/20532417/20557501/bc75ead0-b191-11e6-85a9-22a9709f9bcb.png)
+![simulator screen shot 23-nov-2016 3 28 13 pm](https://cloud.githubusercontent.com/assets/20532417/20557498/bb373142-b191-11e6-9a7b-36544b5f060a.png)
+![simulator screen shot 23-nov-2016 3 28 21 pm](https://cloud.githubusercontent.com/assets/20532417/20557505/bd968bd6-b191-11e6-99e1-11d030c76931.png)
+![simulator screen shot 23-nov-2016 3 28 31 pm](https://cloud.githubusercontent.com/assets/20532417/20557506/bec5088e-b191-11e6-962d-1825fc63a421.png)
+![simulator screen shot 23-nov-2016 3 29 10 pm](https://cloud.githubusercontent.com/assets/20532417/20557512/c17b1762-b191-11e6-9a1e-26c52cb6f6a4.png)
