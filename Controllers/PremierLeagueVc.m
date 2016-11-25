@@ -14,6 +14,7 @@
 #import "YALContextMenuTableView.h"
 #import "ExampleViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "CompetitionsVc.h"
 
 
 static NSString *const menuCellIdentifier = @"rotationCell";
@@ -59,7 +60,7 @@ YALContextMenuTableViewDelegate
 }
 - (void)webServiceHandler {
     
-    NSMutableURLRequest *myRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://api.football-data.org/v1/competitions/426/teams"]];
+      NSMutableURLRequest *myRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://api.football-data.org/v1/competitions/426/teams"]];
 
         [myRequest setValue:@"296672553f954624af8893f4aa95b68c" forHTTPHeaderField:@"X-Auth-Token"];
         [myRequest setHTTPMethod:@"GET"];

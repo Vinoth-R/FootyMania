@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0132A2BE1DD60CA8003DA57B /* NewsDetailVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 0132A2BD1DD60CA8003DA57B /* NewsDetailVc.m */; };
+		016E12721DE5BF45005B1AFB /* CompetitionsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 016E12711DE5BF45005B1AFB /* CompetitionsVc.m */; };
 		017510F81DD32F56000B3793 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 017510DA1DD32F56000B3793 /* InfoPlist.strings */; };
 		017510F91DD32F56000B3793 /* ExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 017510DD1DD32F56000B3793 /* ExampleAppDelegate.m */; };
 		017510FA1DD32F56000B3793 /* ExampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017510DF1DD32F56000B3793 /* ExampleTableViewCell.m */; };
@@ -84,6 +85,8 @@
 /* Begin PBXFileReference section */
 		0132A2BC1DD60CA8003DA57B /* NewsDetailVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailVc.h; sourceTree = "<group>"; };
 		0132A2BD1DD60CA8003DA57B /* NewsDetailVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailVc.m; sourceTree = "<group>"; };
+		016E12701DE5BF45005B1AFB /* CompetitionsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompetitionsVc.h; sourceTree = "<group>"; };
+		016E12711DE5BF45005B1AFB /* CompetitionsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompetitionsVc.m; sourceTree = "<group>"; };
 		017510DB1DD32F56000B3793 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		017510DC1DD32F56000B3793 /* ExampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleAppDelegate.h; sourceTree = "<group>"; };
 		017510DD1DD32F56000B3793 /* ExampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleAppDelegate.m; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 			children = (
 				017BCFA11DCCC39700069732 /* PremierLeagueVc.h */,
 				017BCFA21DCCC39700069732 /* PremierLeagueVc.m */,
+				016E12701DE5BF45005B1AFB /* CompetitionsVc.h */,
+				016E12711DE5BF45005B1AFB /* CompetitionsVc.m */,
 				019C0D431DD1A43500977408 /* clubDetailVc.h */,
 				019C0D441DD1A43500977408 /* clubDetailVc.m */,
 				01781F611DD5F09400431949 /* NewsFeedsVc.h */,
@@ -581,6 +586,7 @@
 				017BCF9E1DCCA40800069732 /* MenuItem.m in Sources */,
 				017510FB1DD32F56000B3793 /* ExampleViewController.m in Sources */,
 				0132A2BE1DD60CA8003DA57B /* NewsDetailVc.m in Sources */,
+				016E12721DE5BF45005B1AFB /* CompetitionsVc.m in Sources */,
 				017BCFA31DCCC39700069732 /* PremierLeagueVc.m in Sources */,
 				01C6007E1DD0637F00FA6CAA /* PremierLeagueCell.m in Sources */,
 				01781F561DD5D1CB00431949 /* RssTableCell.m in Sources */,
@@ -718,6 +724,8 @@
 			baseConfigurationReference = 48490C7EE8BBEA8B773BA41D /* Pods-FootyMania.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",
@@ -764,6 +772,8 @@
 			baseConfigurationReference = E1021B24E31C45FBCB118A66 /* Pods-FootyMania.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",

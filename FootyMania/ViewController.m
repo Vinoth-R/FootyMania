@@ -12,6 +12,7 @@
 #import "ShowMenuVc.h"
 #import "PremierLeagueVc.h"
 #import "RssTableCell.h"
+#import "CompetitionsVc.h"
 
 
 @interface ViewController ()
@@ -38,8 +39,7 @@
     backgroundimgView.image = [UIImage imageNamed:@"55.jpg"];
     imgArray = @[@"22.jpg",@"33.jpg",@"44.jpg",@"55.jpg",@"66.jpg",@"77.jpg",@"11.jpg"];
   //  mytimer = [NSTimer scheduledTimerWithTimeInterval:10.00 target:self selector:@selector(changeImage) userInfo:nil repeats:YES];
-   
-    
+
 }
 -(void)ballRotation
 {
@@ -114,9 +114,15 @@
         return;
     }
     __weak typeof(self) weakSelf = self;
+    
     _popMenu.didSelectedItemCompletion = ^(MenuItem *selectedItem) {
         NSLog(@"%@",selectedItem.title);
-        
+        NSString *CompStr =selectedItem.title;
+         NSDictionary *idDict = [[NSUserDefaults standardUserDefaults]valueForKey:@"CompetitionID"];
+//         if ([idStr isEqualToString:@"PL"] || [idStr isEqualToString:@"BL1"] || [idStr isEqualToString:@"FL1"] || [idStr isEqualToString:@"PD"] || [idStr isEqualToString:@"SA"] || [idStr isEqualToString:@"CL"]) {
+//         
+//         }
+ 
         PremierLeagueVc *PLVc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"PremierLeagueVc"];
         
         [weakSelf presentViewController:PLVc animated:YES completion:nil];
