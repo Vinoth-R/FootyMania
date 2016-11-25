@@ -60,7 +60,7 @@ YALContextMenuTableViewDelegate
 }
 - (void)webServiceHandler {
     
-      NSMutableURLRequest *myRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://api.football-data.org/v1/competitions/426/teams"]];
+      NSMutableURLRequest *myRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://api.football-data.org/v1/competitions/%@/teams",_compNo]]];
 
         [myRequest setValue:@"296672553f954624af8893f4aa95b68c" forHTTPHeaderField:@"X-Auth-Token"];
         [myRequest setHTTPMethod:@"GET"];
@@ -133,16 +133,23 @@ YALContextMenuTableViewDelegate
     [cell.BtnBall.layer addAnimation:rotation forKey:@"Spin"];
     
     cell.clubNameLbl.text = [nameArray objectAtIndex:indexPath.row];
-    NSString *str = [nameArray objectAtIndex:indexPath.row];
-    if ([str isEqualToString:@"Middlesbrough FC"]) {
-        cell.shortNameLbl.text = @"MFC";
+    NSString *str = [codeArray objectAtIndex:indexPath.row];
+    NSLog(@"%@",str);
+
+    if ([str isEqual:[NSNull null]]) {
+        cell.shortNameLbl.text = @"N/A";
     }
     else
     {
     cell.shortNameLbl.text = [codeArray objectAtIndex:indexPath.row];
     }
-    cell.marketValueLbl.text = [valueArray objectAtIndex:indexPath.row];
     
+    if ([str isEqual:[NSNull null]]) {
+        cell.marketValueLbl.text = @"N/A";
+    }
+    else{
+    cell.marketValueLbl.text = [valueArray objectAtIndex:indexPath.row];
+    }
 
     
   //  [cell.logoImageView sd_setImageWithURL:[NSURL URLWithString:urlStr]

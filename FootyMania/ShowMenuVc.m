@@ -33,16 +33,16 @@
     MenuItem *menuItem = [MenuItem itemWithTitle:@"Premier League" iconName:@"Premier_league"];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"La Liga" iconName:@"La_liga"]; //glowColor:[UIColor colorWithRed:0.840 green:0.264 blue:0.208 alpha:0.800]];
+    menuItem = [MenuItem itemWithTitle:@"Primera Division" iconName:@"La_liga"]; //glowColor:[UIColor colorWithRed:0.840 green:0.264 blue:0.208 alpha:0.800]];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"Bundes Liga" iconName:@"Bundes_liga" ];//glowColor:[UIColor colorWithRed:0.232 green:0.442 blue:0.687 alpha:0.800]];
+    menuItem = [MenuItem itemWithTitle:@"1.Bundes Liga" iconName:@"Bundes_liga" ];//glowColor:[UIColor colorWithRed:0.232 green:0.442 blue:0.687 alpha:0.800]];
     [items addObject:menuItem];
     
     menuItem = [MenuItem itemWithTitle:@"Serie A" iconName:@"Serie_A"]; //glowColor:[UIColor colorWithRed:0.000 green:0.509 blue:0.687 alpha:0.800]];
     [items addObject:menuItem];
     
-    menuItem = [MenuItem itemWithTitle:@"League 1" iconName:@"League_one"]; //glowColor:[UIColor colorWithRed:0.687 green:0.164 blue:0.246 alpha:0.800]];
+    menuItem = [MenuItem itemWithTitle:@"Ligue 1" iconName:@"League_one"]; //glowColor:[UIColor colorWithRed:0.687 green:0.164 blue:0.246 alpha:0.800]];
     [items addObject:menuItem];
     
     menuItem = [MenuItem itemWithTitle:@"Champions League" iconName:@"Champions_league" ];//glowColor:[UIColor colorWithRed:0.258 green:0.245 blue:0.687 alpha:0.800]];

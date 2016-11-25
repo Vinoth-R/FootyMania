@@ -21,7 +21,7 @@
     NSArray *playerHref;
 
 }
-
+@property (strong, nonatomic) NSString *compNo;
 @property (strong, nonatomic) IBOutlet UICollectionView *teamCollectionView;
 - (IBAction)CancelBtn:(id)sender;
 - (IBAction)moreBtnPressed:(id)sender;

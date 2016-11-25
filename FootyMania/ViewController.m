@@ -23,7 +23,7 @@
 @end
 
 @implementation ViewController
-@synthesize backgroundimgView;
+@synthesize backgroundimgView ,compNo;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -117,14 +117,26 @@
     
     _popMenu.didSelectedItemCompletion = ^(MenuItem *selectedItem) {
         NSLog(@"%@",selectedItem.title);
-        NSString *CompStr =selectedItem.title;
+        NSString *CompStr =[selectedItem.title stringByReplacingOccurrencesOfString:@" " withString:@""];
+        
          NSDictionary *idDict = [[NSUserDefaults standardUserDefaults]valueForKey:@"CompetitionID"];
-//         if ([idStr isEqualToString:@"PL"] || [idStr isEqualToString:@"BL1"] || [idStr isEqualToString:@"FL1"] || [idStr isEqualToString:@"PD"] || [idStr isEqualToString:@"SA"] || [idStr isEqualToString:@"CL"]) {
-//         
-//         }
+ 
+            for(id key in idDict)
+            {
+                NSLog(@"key=%@ value=%@", key, [idDict objectForKey:key]);
+                NSString *newKey = [key stringByReplacingOccurrencesOfString:@" 2016/17" withString:@""];
+              NSString  *newKey2 = [newKey stringByReplacingOccurrencesOfString:@" " withString:@""];
+              
+            if ([[newKey2 lowercaseString] containsString:[CompStr lowercaseString]]) {
+               compNo = [idDict objectForKey:key];
+             }
+            }
+        
+ 
+     
  
         PremierLeagueVc *PLVc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"PremierLeagueVc"];
-        
+        PLVc.compNo = compNo;
         [weakSelf presentViewController:PLVc animated:YES completion:nil];
         
         

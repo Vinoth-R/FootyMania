@@ -51,7 +51,7 @@
                                        options:kNilOptions
                                        error:&error];
                             idArray = [responseArray valueForKey:@"id"];
-                            leagueArray = [responseArray valueForKey:@"league"];
+                            leagueArray = [responseArray valueForKey:@"caption"];
                             NSMutableDictionary *dict =[[NSMutableDictionary alloc]init];
                             for (int i=0;i<idArray.count ; i++) {
                     

@@ -14,6 +14,7 @@
        NSTimer *mytimer;
 }
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundimgView;
+@property (strong, nonatomic) NSString *compNo;
 - (IBAction)ballBtn:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *ballBtnRotate;
 
