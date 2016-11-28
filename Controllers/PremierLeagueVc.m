@@ -16,7 +16,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import "CompetitionsVc.h"
 
-
 static NSString *const menuCellIdentifier = @"rotationCell";
 
 @interface PremierLeagueVc ()
@@ -48,11 +47,39 @@ YALContextMenuTableViewDelegate
                                                object:nil];
     
     // Do any additional setup after loading the view.
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"crestImages" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc]initWithContentsOfFile:path];
+    imageArray = [dict objectForKey:@"Ligue1"];
+   
+    
      [self initiateMenuOptions];
 
-    imageArray = @[@"Hull_City_AFC.png", @"Leicester02.png", @"FC_Southampton.png", @"Watford.png", @"Middlesbrough_FC_crest.png", @"Stoke_City.png", @"Everton_FC.png", @"Tottenham_Hotspur.png", @"Crystal_Palace_F.C._logo_(2013).png", @"West_Bromwich_Albion.png", @"Burnley_FC_badge.png", @"Swansea_City_Logo.png", @"Manchester_City_FC_badge.png", @"AFC_Sunderland.png", @"Afc_bournemouth.png", @"Manchester_United_FC.png", @"Arsenal_FC.png", @"FC_Liverpool.png", @"Chelsea_crest.png", @"West_Ham_United_FC.png"];
+//    imageArray = @[@"Hull_City_AFC.png", @"Leicester02.png", @"FC_Southampton.png", @"Watford.png", @"Middlesbrough_FC_crest.png", @"Stoke_City.png", @"Everton_FC.png", @"Tottenham_Hotspur.png", @"Crystal_Palace_F.C._logo_(2013).png", @"West_Bromwich_Albion.png", @"Burnley_FC_badge.png", @"Swansea_City_Logo.png", @"Manchester_City_FC_badge.png", @"AFC_Sunderland.png", @"Afc_bournemouth.png", @"Manchester_United_FC.png", @"Arsenal_FC.png", @"FC_Liverpool.png", @"Chelsea_crest.png", @"West_Ham_United_FC.png"];
     [self webServiceHandler];
 }
+
+//
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/180px-Club_Deportivo_Leganés.png
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Athletic_Club_Bilbao.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Atletico_Madrid_logo.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Atletico_Osasuna.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Celta_Vigo.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Deportivo_Alaves_logo.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Fc_barcelona.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/FC_Málaga.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/FC_Valencia.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Granada_CF.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/RC_Deportivo_La_Coruña_logo.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/RCD_Espanyol_De_Barcelona.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Real_Betis.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Real_Madrid_Logo.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Real_Sociedad_San_Sebastián.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Real_Sporting_de_Gijon.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/SD_Eibar_logo.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Sevilla_cf_200px.png
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/UD_Las_Palmas_logo.svg
+///Users/bics/Documents/Vinoth/FootyMania/FootyMania/images/LaLiga/Villarreal_CF_logo.svg
+//
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
