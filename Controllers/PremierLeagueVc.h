@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ExampleViewController.h"
 
 @interface PremierLeagueVc : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 {
@@ -19,9 +20,12 @@
     NSDictionary *playerDict;
     NSArray *playerArray;
     NSArray *playerHref;
+    NSIndexPath *tappedIP;
 
 }
+@property (strong, nonatomic)ExampleViewController *vc;
 @property (strong, nonatomic) NSString *compNo;
+@property (strong, nonatomic) NSString *compName;
 @property (strong, nonatomic) IBOutlet UICollectionView *teamCollectionView;
 - (IBAction)CancelBtn:(id)sender;
 - (IBAction)moreBtnPressed:(id)sender;

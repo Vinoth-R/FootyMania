@@ -67,6 +67,7 @@
 		013DA9371DEC6C5900AC9976 /* SC_Bastia.png in Resources */ = {isa = PBXBuildFile; fileRef = 013DA9231DEC6C5900AC9976 /* SC_Bastia.png */; };
 		013DA9381DEC6C5900AC9976 /* SCO_Angers.png in Resources */ = {isa = PBXBuildFile; fileRef = 013DA9241DEC6C5900AC9976 /* SCO_Angers.png */; };
 		013DA9391DEC6C5900AC9976 /* Stade_Rennais_Football_Club.png in Resources */ = {isa = PBXBuildFile; fileRef = 013DA9251DEC6C5900AC9976 /* Stade_Rennais_Football_Club.png */; };
+		013DA93B1DEC770B00AC9976 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 013DA93A1DEC770B00AC9976 /* loading.png */; };
 		016E12721DE5BF45005B1AFB /* CompetitionsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 016E12711DE5BF45005B1AFB /* CompetitionsVc.m */; };
 		017510F81DD32F56000B3793 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 017510DA1DD32F56000B3793 /* InfoPlist.strings */; };
 		017510F91DD32F56000B3793 /* ExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 017510DD1DD32F56000B3793 /* ExampleAppDelegate.m */; };
@@ -207,6 +208,7 @@
 		013DA9231DEC6C5900AC9976 /* SC_Bastia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SC_Bastia.png; sourceTree = "<group>"; };
 		013DA9241DEC6C5900AC9976 /* SCO_Angers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SCO_Angers.png; sourceTree = "<group>"; };
 		013DA9251DEC6C5900AC9976 /* Stade_Rennais_Football_Club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stade_Rennais_Football_Club.png; sourceTree = "<group>"; };
+		013DA93A1DEC770B00AC9976 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		016E12701DE5BF45005B1AFB /* CompetitionsVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompetitionsVc.h; sourceTree = "<group>"; };
 		016E12711DE5BF45005B1AFB /* CompetitionsVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompetitionsVc.m; sourceTree = "<group>"; };
 		017510DB1DD32F56000B3793 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -545,6 +547,7 @@
 				018B5F241DE868A9008D299D /* football-player.png */,
 				018B5F251DE868A9008D299D /* menu.png */,
 				018B5F261DE868A9008D299D /* news.png */,
+				013DA93A1DEC770B00AC9976 /* loading.png */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				013DA9291DEC6C5900AC9976 /* AS_Saint-Etienne_(aktuell).png in Resources */,
 				013DA8DD1DEC43F100AC9976 /* FC_Málaga.png in Resources */,
 				013DA9101DEC605E00AC9976 /* Svdarmstadt98.png in Resources */,
+				013DA93B1DEC770B00AC9976 /* loading.png in Resources */,
 				018B5F291DE868A9008D299D /* 33.jpg in Resources */,
 				013DA8D91DEC43F100AC9976 /* Atletico_Osasuna.png in Resources */,
 				018B5F541DE868DF008D299D /* FC_Liverpool.png in Resources */,

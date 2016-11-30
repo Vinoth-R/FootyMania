@@ -137,6 +137,7 @@
  
         PremierLeagueVc *PLVc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"PremierLeagueVc"];
         PLVc.compNo = compNo;
+        PLVc.compName = selectedItem.title;
         [weakSelf presentViewController:PLVc animated:YES completion:nil];
         
         
