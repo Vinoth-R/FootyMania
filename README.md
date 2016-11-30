@@ -1,9 +1,10 @@
 # FootyMania
 App intended for Football associated features.
 
-![simulator screen shot 30-nov-2016 11 05 46 am](https://cloud.githubusercontent.com/assets/20532417/20741017/8a341ca2-b6ed-11e6-94e3-286e35385752.png =700x700)
-![simulator screen shot 30-nov-2016 11 06 59 am](https://cloud.githubusercontent.com/assets/20532417/20741027/99fd4550-b6ed-11e6-9973-802fbb15bf27.png)
-![simulator screen shot 30-nov-2016 11 07 44 am](https://cloud.githubusercontent.com/assets/20532417/20741033/a79f6378-b6ed-11e6-91b6-e4b04ad3ea15.png)
-![simulator screen shot 30-nov-2016 11 08 26 am](https://cloud.githubusercontent.com/assets/20532417/20741036/a97e1202-b6ed-11e6-8803-d060ba3bce8f.png)
-![simulator screen shot 30-nov-2016 11 05 56 am](https://cloud.githubusercontent.com/assets/20532417/20741042/b03397e8-b6ed-11e6-9ab5-99b17e2c8e29.png)
-![simulator screen shot 30-nov-2016 11 06 54 am](https://cloud.githubusercontent.com/assets/20532417/20741043/b271d240-b6ed-11e6-8965-855517ad6ced.png)
+![simulator screen shot 30-nov-2016 11 05 46 am](https://cloud.githubusercontent.com/assets/20532417/20741302/68082720-b6ef-11e6-9680-feadd6f34713.png)
+![simulator screen shot 30-nov-2016 11 06 59 am](https://cloud.githubusercontent.com/assets/20532417/20741304/6a826236-b6ef-11e6-8c8f-94c4bb672095.png)
+![simulator screen shot 30-nov-2016 11 07 44 am](https://cloud.githubusercontent.com/assets/20532417/20741305/6e6626e4-b6ef-11e6-94eb-b20c205da181.png)
+![simulator screen shot 30-nov-2016 11 08 26 am](https://cloud.githubusercontent.com/assets/20532417/20741315/7a63011a-b6ef-11e6-8ee2-0e5fc2fbb34e.png)
+![simulator screen shot 30-nov-2016 11 05 56 am](https://cloud.githubusercontent.com/assets/20532417/20741317/7db4387a-b6ef-11e6-9747-9d0519ed2993.png)
+![simulator screen shot 30-nov-2016 11 06 54 am](https://cloud.githubusercontent.com/assets/20532417/20741321/82c0bd3e-b6ef-11e6-8739-30de9e174718.png)
+
