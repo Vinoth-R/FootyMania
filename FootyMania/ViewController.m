@@ -93,7 +93,7 @@
     }
     backgroundimgView.image = [UIImage imageNamed:[imgArray objectAtIndex:counter]];
     CATransition *transition = [CATransition animation];
-    transition.duration = 1.00;
+    transition.duration = 0.50;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     transition.type = kCATransitionFade;
     transition.delegate = self;
