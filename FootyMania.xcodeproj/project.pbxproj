@@ -68,6 +68,7 @@
 		013DA9381DEC6C5900AC9976 /* SCO_Angers.png in Resources */ = {isa = PBXBuildFile; fileRef = 013DA9241DEC6C5900AC9976 /* SCO_Angers.png */; };
 		013DA9391DEC6C5900AC9976 /* Stade_Rennais_Football_Club.png in Resources */ = {isa = PBXBuildFile; fileRef = 013DA9251DEC6C5900AC9976 /* Stade_Rennais_Football_Club.png */; };
 		013DA93B1DEC770B00AC9976 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 013DA93A1DEC770B00AC9976 /* loading.png */; };
+		013F186C1DFFCFF900C8BCC3 /* TransferTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 013F186B1DFFCFF900C8BCC3 /* TransferTableCell.m */; };
 		0145C9001DF9451500C1ADF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0145C8FD1DF9451500C1ADF4 /* Assets.xcassets */; };
 		0145C9011DF9451500C1ADF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0145C8FE1DF9451500C1ADF4 /* LaunchScreen.storyboard */; };
 		0145C9021DF9451500C1ADF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0145C8FF1DF9451500C1ADF4 /* Main.storyboard */; };
@@ -211,6 +212,8 @@
 		013DA9241DEC6C5900AC9976 /* SCO_Angers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SCO_Angers.png; sourceTree = "<group>"; };
 		013DA9251DEC6C5900AC9976 /* Stade_Rennais_Football_Club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stade_Rennais_Football_Club.png; sourceTree = "<group>"; };
 		013DA93A1DEC770B00AC9976 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		013F186A1DFFCFF900C8BCC3 /* TransferTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferTableCell.h; sourceTree = "<group>"; };
+		013F186B1DFFCFF900C8BCC3 /* TransferTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferTableCell.m; sourceTree = "<group>"; };
 		0145C8FD1DF9451500C1ADF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0145C8FE1DF9451500C1ADF4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0145C8FF1DF9451500C1ADF4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -626,6 +629,8 @@
 				01C6007D1DD0637F00FA6CAA /* PremierLeagueCell.m */,
 				01781F541DD5D1CB00431949 /* RssTableCell.h */,
 				01781F551DD5D1CB00431949 /* RssTableCell.m */,
+				013F186A1DFFCFF900C8BCC3 /* TransferTableCell.h */,
+				013F186B1DFFCFF900C8BCC3 /* TransferTableCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -900,6 +905,7 @@
 				017BCF9D1DCCA40800069732 /* MenuButton.m in Sources */,
 				019C5B2C1DDDDC2600559F44 /* YALContextMenuTableView.m in Sources */,
 				017BCFA61DCCC4E100069732 /* ShowMenuVc.m in Sources */,
+				013F186C1DFFCFF900C8BCC3 /* TransferTableCell.m in Sources */,
 				017510FA1DD32F56000B3793 /* ExampleTableViewCell.m in Sources */,
 				017BCF6D1DCCA37700069732 /* main.m in Sources */,
 				019C5B311DDDDC4000559F44 /* ContextMenuCell.m in Sources */,
