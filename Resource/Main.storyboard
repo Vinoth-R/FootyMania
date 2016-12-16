@@ -68,59 +68,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91E-kB-FU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6732" y="973.76311844077964"/>
+            <point key="canvasLocation" x="6650" y="974"/>
         </scene>
-        <!--Transfer News Vc-->
-        <scene sceneID="wQp-aA-gsv">
+        <!--Transfer News-->
+        <scene sceneID="mPS-ck-PBX">
             <objects>
-                <viewController id="gNY-9J-cfx" customClass="TransferNewsVc" sceneMemberID="viewController">
+                <viewController id="Euy-do-UeI" customClass="TransferNewsVc" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EBx-zI-ony"/>
-                        <viewControllerLayoutGuide type="bottom" id="uNi-PD-WhP"/>
+                        <viewControllerLayoutGuide type="top" id="i35-3M-0st"/>
+                        <viewControllerLayoutGuide type="bottom" id="6JV-1g-Fnl"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WFF-GN-2Ah">
+                    <view key="view" contentMode="scaleToFill" id="tWs-Da-Hvb">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="127" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IDq-vY-Fxz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="112" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="efL-Qy-MFp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="127" id="zoh-RF-ozT" customClass="TransferTableCell">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="127"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="112" id="AWS-aB-foT" customClass="TransferTableCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zoh-RF-ozT" id="AD1-aU-jhD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AWS-aB-foT" id="GPB-dh-VqD">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <webView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qJ-28-XKr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nam-kB-JIR">
+                                                    <rect key="frame" x="8" y="10" width="108" height="92"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </webView>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nup-zP-yIy">
+                                                    <rect key="frame" x="124" y="10" width="243" height="92"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="webView" destination="7qJ-28-XKr" id="rkd-xo-P6V"/>
+                                            <outlet property="imgView" destination="nam-kB-JIR" id="lf8-4o-cri"/>
+                                            <outlet property="label" destination="nup-zP-yIy" id="kvZ-yp-Z5e"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="gNY-9J-cfx" id="nPg-as-Ffc"/>
-                                    <outlet property="delegate" destination="gNY-9J-cfx" id="rcz-CX-JNT"/>
+                                    <outlet property="dataSource" destination="Euy-do-UeI" id="aZV-AJ-LlK"/>
+                                    <outlet property="delegate" destination="Euy-do-UeI" id="vl2-PN-FME"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Transfer News" id="7yP-2y-bA9"/>
                     <connections>
-                        <outlet property="table_view" destination="IDq-vY-Fxz" id="tE0-Qs-MU2"/>
+                        <outlet property="table_view" destination="efL-Qy-MFp" id="qEG-fa-VrY"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PUd-D1-t9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6g-4M-jyb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7448.8000000000002" y="973.76311844077964"/>
+            <point key="canvasLocation" x="7685.6000000000004" y="973.76311844077964"/>
         </scene>
         <!--News-->
         <scene sceneID="AOS-xF-JP6">
@@ -216,7 +226,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="news.png"/>
                                 <connections>
-                                    <segue destination="ivh-8D-1pN" kind="show" id="e06-Jk-Hbg"/>
+                                    <segue destination="ivh-8D-1pN" kind="show" id="zKa-Rp-cMX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzT-UH-9r2">
@@ -238,7 +248,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="transfers.png"/>
                                 <connections>
-                                    <segue destination="gNY-9J-cfx" kind="show" id="n9K-Yo-43s"/>
+                                    <segue destination="Euy-do-UeI" kind="show" id="fkO-hi-pgB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ1-yk-YWF">
@@ -301,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6732" y="124.58770614692655"/>
+            <point key="canvasLocation" x="6734" y="124"/>
         </scene>
         <!--Premier League Vc-->
         <scene sceneID="Udc-j3-Ati">

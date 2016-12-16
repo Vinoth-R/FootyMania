@@ -24,6 +24,7 @@
     refreshControl.tintColor = [UIColor whiteColor];
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self.table_view addSubview:refreshControl];
+    [self.table_view setSeparatorColor:[UIColor whiteColor]];
 
     [self.navigationController setNavigationBarHidden:NO];
     [self webservice];

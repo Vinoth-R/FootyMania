@@ -10,5 +10,7 @@
 
 @interface TransferTableCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

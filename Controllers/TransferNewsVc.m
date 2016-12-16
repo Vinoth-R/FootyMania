@@ -8,6 +8,8 @@
 
 #import "TransferNewsVc.h"
 #import "TransferTableCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
 
 @interface TransferNewsVc ()
 
@@ -19,8 +21,15 @@
     [super viewDidLoad];
     [self webservice];
     NSLog(@"description-->%@",description);
+    [self.navigationController setNavigationBarHidden:NO];
     
     // Do any additional setup after loading the view.
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,9 +49,24 @@
     
     TransferTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NSString *htmlStr = [[feeds objectAtIndex:indexPath.row]objectForKey:@"description"];
-    NSString *alteredHtmlStr = [htmlStr stringByReplacingOccurrencesOfString:@"html'>" withString:@"html style=\"display: inline-block; float: left;\">"];
-    [cell.webView loadHTMLString:alteredHtmlStr baseURL:nil];
-    return cell ;
+  //  NSString *alteredHtmlStr = [htmlStr stringByReplacingOccurrencesOfString:@"html'>" withString:@"html style=\"display: inline-block; float: left;\">"];
+
+    //image url
+    NSRange startUrl = [htmlStr rangeOfString:@"src"];
+    NSRange endUrl = [[htmlStr substringFromIndex:startUrl.location] rangeOfString:@"'>"];
+    NSString *urlStr = [htmlStr substringWithRange:NSMakeRange(startUrl.location, endUrl.location)];
+    NSString *trimmedHtmlStr = [urlStr stringByReplacingOccurrencesOfString:@"src='" withString:@""];
+    
+    //story description
+    NSRange startDes = [htmlStr rangeOfString:@"<BR>"];
+    NSRange endDes = [[htmlStr substringFromIndex:startDes.location] rangeOfString:@"</p>"];
+    NSString *urlDes = [htmlStr substringWithRange:NSMakeRange(startDes.location, endDes.location)];
+    NSString *trimmedStr = [urlDes stringByReplacingOccurrencesOfString:@"<BR>" withString:@""];
+    
+    cell.label.text = trimmedStr;
+    
+    [cell.imgView sd_setImageWithURL:[NSURL URLWithString:trimmedHtmlStr] placeholderImage:[UIImage imageNamed:@"Ball.png"]];
+            return cell ;
 
 }
 
@@ -67,8 +91,8 @@
         thumbnail      = [[NSMutableString alloc] init];
         pubdate        = [[NSMutableString alloc] init];
         images         = [[NSMutableString alloc]init];
-        content         = [[NSMutableString alloc]init];
-        title         = [[NSMutableString alloc]init];
+        content        = [[NSMutableString alloc]init];
+        title          = [[NSMutableString alloc]init];
         
         
     }
