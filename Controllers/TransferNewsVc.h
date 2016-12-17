@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TransferNewsVc : UIViewController <UITableViewDelegate, UITableViewDataSource, NSXMLParserDelegate>
+@interface TransferNewsVc : UIViewController <UITableViewDelegate, UITableViewDataSource, NSXMLParserDelegate, CAAnimationDelegate, UIGestureRecognizerDelegate>
 {
     NSXMLParser     *parser;
     NSMutableArray  *feeds;
@@ -21,8 +21,10 @@
     NSMutableString *content;
     NSString *element;
     NSMutableDictionary *item;
+    NSString *trimmedJUrlStr;
 
 }
 @property (weak, nonatomic) IBOutlet UITableView *table_view;
+
 
 @end

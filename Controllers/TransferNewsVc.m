@@ -12,7 +12,11 @@
 
 
 @interface TransferNewsVc ()
-
+{
+    UIView *detailView;
+    NSMutableArray *mutArray;
+    UIWebView *web;
+}
 @end
 
 @implementation TransferNewsVc
@@ -22,7 +26,11 @@
     [self webservice];
     NSLog(@"description-->%@",description);
     [self.navigationController setNavigationBarHidden:NO];
+     mutArray = [[NSMutableArray alloc]init];
     
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapReceived:)];
+    [tapGestureRecognizer setDelegate:self];
+    [web addGestureRecognizer:tapGestureRecognizer];
     // Do any additional setup after loading the view.
 }
 
@@ -63,11 +71,47 @@
     NSString *urlDes = [htmlStr substringWithRange:NSMakeRange(startDes.location, endDes.location)];
     NSString *trimmedStr = [urlDes stringByReplacingOccurrencesOfString:@"<BR>" withString:@""];
     
+    //html url
+    NSRange startHtmlUrl = [htmlStr rangeOfString:@"HREF='"];
+    NSRange endHtmlUrl = [[htmlStr substringFromIndex:startHtmlUrl.location] rangeOfString:@"'>"];
+    NSString *htmlUrl = [htmlStr substringWithRange:NSMakeRange(startHtmlUrl.location, endHtmlUrl.location)];
+    trimmedJUrlStr = [htmlUrl stringByReplacingOccurrencesOfString:@"HREF='" withString:@""];
+    [mutArray addObject:trimmedJUrlStr];
+    
     cell.label.text = trimmedStr;
     
     [cell.imgView sd_setImageWithURL:[NSURL URLWithString:trimmedHtmlStr] placeholderImage:[UIImage imageNamed:@"Ball.png"]];
             return cell ;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    detailView = [[UIView alloc]initWithFrame:CGRectMake(0,0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    [self.view addSubview:detailView];
+    [detailView setBackgroundColor:[UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.5f]];
+    
+    web = [[UIWebView alloc]initWithFrame:CGRectMake(10, 10, detailView.bounds.size.width-20, detailView.bounds.size.height-20)];
+    [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:mutArray[indexPath.row]]]];
+    [detailView addSubview:web];
+    
+    CATransition *animation = [CATransition animation];
+    
+    [animation setType:kCATransitionPush];
+    [animation setSubtype:kCATransitionReveal];
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+    [animation setDelegate:self];
+    [animation setDuration:2];
+    [detailView.layer addAnimation:animation forKey:@"animate"];
 
+}
+- (void)animateViewHeight:(UIView*)animateView withAnimationType:(NSString*)animType {
+    CATransition *animation = [CATransition animation];
+    [animation setType:kCATransitionPush];
+    [animation setSubtype:animType];
+    
+    [animation setDuration:0.5];
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    [[animateView layer] addAnimation:animation forKey:kCATransition];
+    animateView.hidden = !animateView.hidden;
 }
 
 -(void)webservice
@@ -141,5 +185,8 @@
     [self.table_view reloadData];
     
 }
-
+-(void)tapReceived:(UITapGestureRecognizer *)tapGestureRecognizer
+{
+    NSLog(@"tapped");
+}
 @end
