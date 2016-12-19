@@ -28,9 +28,7 @@
     [self.navigationController setNavigationBarHidden:NO];
      mutArray = [[NSMutableArray alloc]init];
     
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapReceived:)];
-    [tapGestureRecognizer setDelegate:self];
-    [web addGestureRecognizer:tapGestureRecognizer];
+   
     // Do any additional setup after loading the view.
 }
 
@@ -81,27 +79,42 @@
     cell.label.text = trimmedStr;
     
     [cell.imgView sd_setImageWithURL:[NSURL URLWithString:trimmedHtmlStr] placeholderImage:[UIImage imageNamed:@"Ball.png"]];
-            return cell ;
+    
+    cell.dateLbl.text = [[feeds objectAtIndex:indexPath.row]objectForKey:@"pubDate"];
+    
+     return cell ;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
+    self.navigationItem.hidesBackButton=YES;
     detailView = [[UIView alloc]initWithFrame:CGRectMake(0,0, self.view.bounds.size.width, self.view.bounds.size.height)];
     [self.view addSubview:detailView];
-    [detailView setBackgroundColor:[UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.5f]];
-    
+    [detailView setBackgroundColor:[UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1]];
+
+   
     web = [[UIWebView alloc]initWithFrame:CGRectMake(10, 10, detailView.bounds.size.width-20, detailView.bounds.size.height-20)];
     [web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:mutArray[indexPath.row]]]];
     [detailView addSubview:web];
+    imgV = [[UIImageView alloc]initWithFrame:CGRectMake(315, 2, 30, 30)];
+    imgV.image = [UIImage imageNamed:@"close1.png"];
+    [web addSubview:imgV];
+
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapReceived:)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [imgV setUserInteractionEnabled:YES];
+    [tapGestureRecognizer setDelegate:self];
+    [imgV addGestureRecognizer:tapGestureRecognizer];
     
     CATransition *animation = [CATransition animation];
-    
     [animation setType:kCATransitionPush];
-    [animation setSubtype:kCATransitionReveal];
+    [animation setSubtype:kCATransitionFromBottom];
     [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
     [animation setDelegate:self];
     [animation setDuration:2];
-    [detailView.layer addAnimation:animation forKey:@"animate"];
-
+    [detailView.layer addAnimation:animation forKey:@""];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 - (void)animateViewHeight:(UIView*)animateView withAnimationType:(NSString*)animType {
     CATransition *animation = [CATransition animation];
@@ -187,6 +200,10 @@
 }
 -(void)tapReceived:(UITapGestureRecognizer *)tapGestureRecognizer
 {
-    NSLog(@"tapped");
+    [detailView removeFromSuperview];
+    self.navigationItem.hidesBackButton=NO;
+
 }
+
+
 @end

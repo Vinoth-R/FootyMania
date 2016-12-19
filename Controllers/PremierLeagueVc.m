@@ -297,9 +297,9 @@ YALContextMenuTableViewDelegate
 //                        @"Block user"];
     
     self.menuIcons = @[[UIImage imageNamed:@"Icnclose"],
-                       [UIImage imageNamed:@"SendMessageIcn"],
-                       [UIImage imageNamed:@"LikeIcn"],
-                       [UIImage imageNamed:@"AddToFriendsIcn"]];
+                       [UIImage imageNamed:@"Players"],
+                       [UIImage imageNamed:@"Fixtures"],
+                       [UIImage imageNamed:@"Table"]];
 //                       [UIImage imageNamed:@"AddToFavouritesIcn"],
 //                       [UIImage imageNamed:@"BlockUserIcn"]];
 }

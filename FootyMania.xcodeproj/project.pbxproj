@@ -95,6 +95,7 @@
 		017BCF9F1DCCA40800069732 /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF9B1DCCA40800069732 /* PopMenu.m */; };
 		017BCFA31DCCC39700069732 /* PremierLeagueVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCFA21DCCC39700069732 /* PremierLeagueVc.m */; };
 		017BCFA61DCCC4E100069732 /* ShowMenuVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCFA51DCCC4E100069732 /* ShowMenuVc.m */; };
+		018844871E07C34D0008D8AC /* close1.png in Resources */ = {isa = PBXBuildFile; fileRef = 018844861E07C34D0008D8AC /* close1.png */; };
 		018B5F0E1DE862FB008D299D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B5F0B1DE862FB008D299D /* CoreGraphics.framework */; };
 		018B5F0F1DE862FB008D299D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B5F0C1DE862FB008D299D /* CoreImage.framework */; };
 		018B5F101DE862FB008D299D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B5F0D1DE862FB008D299D /* CoreText.framework */; };
@@ -258,6 +259,7 @@
 		017BCFA21DCCC39700069732 /* PremierLeagueVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PremierLeagueVc.m; sourceTree = "<group>"; };
 		017BCFA41DCCC4E100069732 /* ShowMenuVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMenuVc.h; sourceTree = "<group>"; };
 		017BCFA51DCCC4E100069732 /* ShowMenuVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMenuVc.m; sourceTree = "<group>"; };
+		018844861E07C34D0008D8AC /* close1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close1.png; sourceTree = "<group>"; };
 		018B5F0B1DE862FB008D299D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		018B5F0C1DE862FB008D299D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		018B5F0D1DE862FB008D299D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -567,6 +569,7 @@
 				01FB84E61DEF0B06005EAEB4 /* news.png */,
 				013DA93A1DEC770B00AC9976 /* loading.png */,
 				01FB84E41DEF08EA005EAEB4 /* transfers.png */,
+				018844861E07C34D0008D8AC /* close1.png */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -787,6 +790,7 @@
 				013DA9081DEC605E00AC9976 /* HSV-Logo.png in Resources */,
 				018B5F5D1DE868DF008D299D /* Tottenham_Hotspur.png in Resources */,
 				017510FC1DD32F56000B3793 /* expandGlyph.png in Resources */,
+				018844871E07C34D0008D8AC /* close1.png in Resources */,
 				013DA9321DEC6C5900AC9976 /* Logo OGC Nice.png in Resources */,
 				013DA90D1DEC605E00AC9976 /* RB_Leipzig_2010_logo.png in Resources */,
 				013DA9291DEC6C5900AC9976 /* AS_Saint-Etienne_(aktuell).png in Resources */,

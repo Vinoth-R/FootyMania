@@ -22,6 +22,7 @@
     NSString *element;
     NSMutableDictionary *item;
     NSString *trimmedJUrlStr;
+    UIImageView *imgV;
 
 }
 @property (weak, nonatomic) IBOutlet UITableView *table_view;
