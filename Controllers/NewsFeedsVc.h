@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsFeedsVc : UIViewController <NSXMLParserDelegate>
+@interface NewsFeedsVc : UIViewController <NSXMLParserDelegate, UIGestureRecognizerDelegate, CAAnimationDelegate, UIWebViewDelegate>
 {
 
  
@@ -18,10 +18,12 @@
     NSMutableString *thumbnail;
     NSMutableString *pubdate;
     NSMutableString *link;
+    NSMutableArray *mutLinkArray;
     NSMutableString *images;
     NSMutableString *content;
     NSString *element;
     NSMutableDictionary *item;
+    UIImageView *imgV;
 }
 @property (strong, nonatomic) IBOutlet UITableView *table_view;
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ExampleViewController.h"
+#import "FixturesVc.h"
 
 @interface PremierLeagueVc : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 {
@@ -23,7 +24,8 @@
     NSIndexPath *tappedIP;
 
 }
-@property (strong, nonatomic)ExampleViewController *vc;
+@property (strong, nonatomic)ExampleViewController *Exvc;
+@property (strong, nonatomic)FixturesVc *FixVc;
 @property (strong, nonatomic) NSString *compNo;
 @property (strong, nonatomic) NSString *compName;
 @property (strong, nonatomic) IBOutlet UICollectionView *teamCollectionView;

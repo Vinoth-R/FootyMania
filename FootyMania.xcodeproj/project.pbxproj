@@ -95,6 +95,8 @@
 		017BCF9F1DCCA40800069732 /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCF9B1DCCA40800069732 /* PopMenu.m */; };
 		017BCFA31DCCC39700069732 /* PremierLeagueVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCFA21DCCC39700069732 /* PremierLeagueVc.m */; };
 		017BCFA61DCCC4E100069732 /* ShowMenuVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 017BCFA51DCCC4E100069732 /* ShowMenuVc.m */; };
+		017FBB291E1238B2009FF756 /* FixturesVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FBB281E1238B2009FF756 /* FixturesVc.m */; };
+		017FBB2C1E123D0F009FF756 /* FixturesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 017FBB2B1E123D0F009FF756 /* FixturesCell.m */; };
 		018844871E07C34D0008D8AC /* close1.png in Resources */ = {isa = PBXBuildFile; fileRef = 018844861E07C34D0008D8AC /* close1.png */; };
 		018B5F0E1DE862FB008D299D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B5F0B1DE862FB008D299D /* CoreGraphics.framework */; };
 		018B5F0F1DE862FB008D299D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018B5F0C1DE862FB008D299D /* CoreImage.framework */; };
@@ -259,6 +261,10 @@
 		017BCFA21DCCC39700069732 /* PremierLeagueVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PremierLeagueVc.m; sourceTree = "<group>"; };
 		017BCFA41DCCC4E100069732 /* ShowMenuVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMenuVc.h; sourceTree = "<group>"; };
 		017BCFA51DCCC4E100069732 /* ShowMenuVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMenuVc.m; sourceTree = "<group>"; };
+		017FBB271E1238B2009FF756 /* FixturesVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixturesVc.h; sourceTree = "<group>"; };
+		017FBB281E1238B2009FF756 /* FixturesVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixturesVc.m; sourceTree = "<group>"; };
+		017FBB2A1E123D0F009FF756 /* FixturesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixturesCell.h; sourceTree = "<group>"; };
+		017FBB2B1E123D0F009FF756 /* FixturesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixturesCell.m; sourceTree = "<group>"; };
 		018844861E07C34D0008D8AC /* close1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close1.png; sourceTree = "<group>"; };
 		018B5F0B1DE862FB008D299D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		018B5F0C1DE862FB008D299D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -543,6 +549,8 @@
 				0132A2BD1DD60CA8003DA57B /* NewsDetailVc.m */,
 				01FB84E81DEF1A5C005EAEB4 /* TransferNewsVc.h */,
 				01FB84E91DEF1A5C005EAEB4 /* TransferNewsVc.m */,
+				017FBB271E1238B2009FF756 /* FixturesVc.h */,
+				017FBB281E1238B2009FF756 /* FixturesVc.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -634,6 +642,8 @@
 				01781F551DD5D1CB00431949 /* RssTableCell.m */,
 				013F186A1DFFCFF900C8BCC3 /* TransferTableCell.h */,
 				013F186B1DFFCFF900C8BCC3 /* TransferTableCell.m */,
+				017FBB2A1E123D0F009FF756 /* FixturesCell.h */,
+				017FBB2B1E123D0F009FF756 /* FixturesCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -907,7 +917,9 @@
 				01781F561DD5D1CB00431949 /* RssTableCell.m in Sources */,
 				017BCF9F1DCCA40800069732 /* PopMenu.m in Sources */,
 				017BCF9D1DCCA40800069732 /* MenuButton.m in Sources */,
+				017FBB291E1238B2009FF756 /* FixturesVc.m in Sources */,
 				019C5B2C1DDDDC2600559F44 /* YALContextMenuTableView.m in Sources */,
+				017FBB2C1E123D0F009FF756 /* FixturesCell.m in Sources */,
 				017BCFA61DCCC4E100069732 /* ShowMenuVc.m in Sources */,
 				013F186C1DFFCFF900C8BCC3 /* TransferTableCell.m in Sources */,
 				017510FA1DD32F56000B3793 /* ExampleTableViewCell.m in Sources */,

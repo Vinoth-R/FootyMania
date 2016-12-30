@@ -23,7 +23,7 @@
     NSString *StrCrop = [_imgStr stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     NSString *imgStrCrop = [StrCrop stringByReplacingOccurrencesOfString:@"\t" withString:@""];
     
-    [_imgView sd_setImageWithURL:[NSURL URLWithString:imgStrCrop] placeholderImage:[UIImage imageNamed: @"loading.png" ] options:SDWebImageHighPriority];
+    [_imgView sd_setImageWithURL:[NSURL URLWithString:imgStrCrop] placeholderImage:[UIImage imageNamed: @"loading.png"] options:SDWebImageHighPriority];
    NSString *width = @"320";
     NSString *heigth = @"480";
  _newsStr =   [_newsStr stringByReplacingOccurrencesOfString:@"width=" withString:[NSString stringWithFormat:@"width=%@",width]];

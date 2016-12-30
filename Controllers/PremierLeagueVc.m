@@ -35,7 +35,7 @@ YALContextMenuTableViewDelegate
 @end
 
 @implementation PremierLeagueVc
-@synthesize teamCollectionView, vc;
+@synthesize teamCollectionView, Exvc, FixVc;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -314,19 +314,28 @@ YALContextMenuTableViewDelegate
     if (indexPath.row==0) {
         
            }
-    else
+    else if(indexPath.row==1)
     {
     NSLog(@"Menu dismissed with indexpath = %@", indexPath);
-    vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"ExampleViewController"];
+    Exvc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"ExampleViewController"];
         [self playerURL];
   //  vc.playerUrlStr = [playerHref objectAtIndex:indexPath.row];
-    [self presentViewController:vc animated:YES completion:nil];
+    [self presentViewController:Exvc animated:YES completion:nil];
+    }
+    else if(indexPath.row==2)
+    {
+    
+        FixVc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"FixtureVc"];
+        [self presentViewController:FixVc animated:YES completion:nil];
+        
+    
+    
     }
 }
 
 -(void)playerURL
 {
-vc.playerUrlStr = [playerHref objectAtIndex:(long)tappedIP.row];
+Exvc.playerUrlStr = [playerHref objectAtIndex:(long)tappedIP.row];
 }
 
 #pragma mark - UITableViewDataSource, UITableViewDelegate
