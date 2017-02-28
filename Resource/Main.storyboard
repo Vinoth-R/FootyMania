@@ -38,6 +38,11 @@
                                             <constraint firstAttribute="height" constant="228" id="WAW-92-pqh"/>
                                         </constraints>
                                     </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xQc-oC-HvC">
+                                        <rect key="frame" x="177" y="104" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="uBq-4L-djR" firstAttribute="top" secondItem="ciH-ij-tQv" secondAttribute="top" constant="225" id="2pO-3Q-MMv"/>
@@ -63,6 +68,7 @@
                     <connections>
                         <outlet property="imgView" destination="uJB-nk-l0D" id="RIB-Mg-StC"/>
                         <outlet property="scrollView" destination="ciH-ij-tQv" id="aX4-Gw-euU"/>
+                        <outlet property="spinner" destination="xQc-oC-HvC" id="BcU-kO-ctr"/>
                         <outlet property="webView" destination="uBq-4L-djR" id="RgG-qc-5Tt"/>
                     </connections>
                 </viewController>
@@ -433,7 +439,7 @@
                                         <rect key="frame" x="23.5" y="0.0" width="328" height="189"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="328" height="189"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="189"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lss-n8-cM7">
